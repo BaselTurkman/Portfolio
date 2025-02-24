@@ -12,7 +12,6 @@ main{
     display: flex;
     justify-content: space-around;
     background: white;
-    /* height: 80vh; */
     min-height: 80vh;
     padding: 2em;
     border-radius: 10px;
@@ -20,7 +19,6 @@ main{
     animation: fadeIn 1s ease-in-out;
     border-radius: 2%;
     margin-top: 4em;
-
 }
 
 .main-content {
@@ -50,6 +48,7 @@ main{
 }
 
 .home-button {
+    text-decoration: none;
     background: #007bff;
     color: white;
     border: none;
@@ -66,7 +65,6 @@ main{
     background: #0056b3;
 }
 
-/* Image Section */
 .home aside {
     display: flex;
     align-items: center;
@@ -87,13 +85,11 @@ aside .my-photo:hover {
     transform: scale(1.1);
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .home {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        /* height: 100vh; */
     }
 
     .main-content {
@@ -114,18 +110,6 @@ aside .my-photo:hover {
         width: 200px;
     }
 }
-/* 
-@media (max-width: 600px){
-    aside .my-photo{
-        width: 200px;
-    }
-}
-
-@media (max-width: 400px){
-    aside .my-photo{
-        width: 150px;
-    }
-} */
 
 /* Fade-in Animation */
 @keyframes fadeIn {

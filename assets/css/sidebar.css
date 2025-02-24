@@ -25,6 +25,7 @@
   display: none;
   transition: 0.5s ease;
 }
+
 @media (max-width: 800px) {
   .hide-on-mobile {
     display: none;
@@ -33,6 +34,7 @@
     display: block;
   }
 }
+
 @media (max-width: 400px) {
   .sidebar {
     width: 100%;
