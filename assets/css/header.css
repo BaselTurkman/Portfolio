@@ -13,7 +13,7 @@ header{
 }
 
 nav {
-  background-color: #222; /* Dark background for contrast */
+  background-color: #222;
 }
 
 ul {
@@ -46,6 +46,11 @@ li:first-child {
   color: beige;
   font-weight: bold;
   font-size: 1.25em;
+}
+
+.nav-button{
+  background-color: #222;
+  border: 0;
 }
 
 @media (max-width: 768px){

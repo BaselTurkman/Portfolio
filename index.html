@@ -13,11 +13,18 @@
   <body>
     <header>
       <nav>
-        <ul>
-          <li><a href="#Home" class="link logo">Basel</a></li>
+        <ul class="sidebar">
+          <li onclick=hideSidebar()><button class="nav-button"><i class="fa-solid fa-x" style="color: white; font-size: 1em;"></i></button></li>
           <li><a href="#Achievements" class="link">Achievements</a></li>
           <li><a href="#Projects" class="link">Projects</a></li>
           <li><a href="#Contact" class="link">Contact</a></li>
+        </ul>
+        <ul>
+          <li><a href="#Home" class="link logo">Basel</a></li>
+          <li class="hide-on-mobile"><a href="#Achievements" class="link">Achievements</a></li>
+          <li class="hide-on-mobile"><a href="#Projects" class="link">Projects</a></li>
+          <li class="hide-on-mobile"><a href="#Contact" class="link">Contact</a></li>
+          <li class="menu-button" onclick=showSidebar()><button class="nav-button"><i class="fa-solid fa-bars" style="color: white; font-size: 1em;"></i></button></li>
         </ul>
       </nav>
     </header>
