@@ -1,0 +1,142 @@
+body{
+    background-color: #faf9ff;
+    scroll-behavior: smooth;
+}
+
+main{
+    width: 95%;
+    margin: auto;
+    margin-top: 1em;
+}
+
+.home {
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    /* height: 80vh; */
+    min-height: 80vh;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+    border-radius: 2%;
+    margin-top: 4em;
+
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 2;
+    padding: 2em;
+    min-width: 300px;
+}
+
+.main-content h1 {
+    font-size: 2.6rem;
+    color: #333;
+    margin-bottom: 1.2em;
+}
+
+.main-content p {
+    margin-top: 1em;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.heading {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.home-button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    width: fit-content;
+    margin-top: 1.2em;
+}
+
+.home-button:hover {
+    background: #0056b3;
+}
+
+/* Image Section */
+.home aside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+aside .my-photo {
+    width: 18.75em;
+    height: auto; 
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007bff;
+    transition: transform 0.3s ease-in-out;
+}
+
+aside .my-photo:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        /* height: 100vh; */
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+    .home-button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    aside {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    aside .my-photo{
+        width: 200px;
+    }
+}
+/* 
+@media (max-width: 600px){
+    aside .my-photo{
+        width: 200px;
+    }
+}
+
+@media (max-width: 400px){
+    aside .my-photo{
+        width: 150px;
+    }
+} */
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
